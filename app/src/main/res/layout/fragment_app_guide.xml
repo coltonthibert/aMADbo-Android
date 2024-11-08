@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue_700"
+    android:layout_marginBottom="55dp"
+    tools:context=".fragments.AppGuideFragment">
+
+
+    <ImageView
+        android:id="@+id/guideScreenshot"
+        android:layout_width="402dp"
+        android:layout_height="310dp"
+        android:src="@drawable/guide_frame1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17000002" />
+
+    <ImageView
+        android:id="@+id/bg_guide"
+        android:layout_width="375dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/shape_detailindent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider6"
+        app:layout_constraintVertical_bias="0.26" />
+
+    <TextView
+        android:id="@+id/guideBody"
+        android:layout_width="351dp"
+        android:layout_height="187dp"
+        android:fontFamily="@font/open_sans"
+        android:text="Lorum Ipsum Dolor Sit Amet Consectetur Adipiscing Elit Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua Ut Enim Ad Minim Veniam Quis Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip Ex Ea Commodo Consequat Duis Aute Irure Dolor In Reprehenderit In Voluptate Velit Esse Cillum Dolore Eu Fugiat Nulla Pariatur Excepteur Sint Occaecat Cupidatat Non Proident Sunt In Culpa Qui Officia Deserunt Mollit Anim Id Est Laborum"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_guide"
+        app:layout_constraintEnd_toEndOf="@+id/bg_guide"
+        app:layout_constraintStart_toStartOf="@+id/bg_guide"
+        app:layout_constraintTop_toTopOf="@+id/bg_guide" />
+
+    <View
+        android:id="@+id/divider6"
+        android:layout_width="350dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideScreenshot" />
+
+    <ImageView
+        android:id="@+id/topBar_Guide"
+        android:layout_width="379dp"
+        android:layout_height="40dp"
+        android:src="@drawable/shape_topbar_orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/guideTitle"
+        android:layout_width="366dp"
+        android:layout_height="39dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:gravity="center"
+        android:text="Guide Title"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="@+id/topBar_Guide"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="@+id/topBar_Guide"
+        app:layout_constraintTop_toTopOf="@+id/topBar_Guide" />
+</androidx.constraintlayout.widget.ConstraintLayout>

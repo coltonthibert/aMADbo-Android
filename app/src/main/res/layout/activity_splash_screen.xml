@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C9BD6"
+    tools:context=".SplashScreenActivity">
+
+    <ImageView
+        android:id="@+id/splash_background_scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="980dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/splash_background" />
+
+    <ImageView
+        android:id="@+id/splash_amadboLogo"
+        android:layout_width="372dp"
+        android:layout_height="178dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.26"
+        app:srcCompat="@drawable/amadbo_logo" />
+
+    <ImageView
+        android:id="@+id/splash_amiibo_red"
+        android:layout_width="70dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toStartOf="@+id/splash_amiibo_green"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toEndOf="@+id/splash_amiibo_blue"
+        app:layout_constraintTop_toBottomOf="@+id/splash_amadboLogo"
+        app:srcCompat="@drawable/splash_red" />
+
+    <ImageView
+        android:id="@+id/splash_amiibo_blue"
+        android:layout_width="70dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/splash_amadboLogo"
+        app:srcCompat="@drawable/splash_blue" />
+
+    <ImageView
+        android:id="@+id/splash_amiibo_green"
+        android:layout_width="70dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/splash_amadboLogo"
+        app:srcCompat="@drawable/splash_green" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

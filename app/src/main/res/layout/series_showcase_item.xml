@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gridView"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:background="@android:color/transparent"
+    app:cardElevation="6dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/background_text"
+            android:layout_width="122dp"
+            android:layout_height="162dp"
+            android:alpha="0.7"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/shape_detailindent"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/amiibo_icon_showcase"
+            android:layout_width="183dp"
+            android:layout_height="133dp"
+            android:contentDescription="@string/amiibo_cd"
+            android:padding="14dp"
+            app:layout_constraintBottom_toTopOf="@+id/amiibo_name_showcase"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/amiibo_placeholder" />
+
+        <TextView
+            android:id="@+id/amiibo_name_showcase"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:maxLines="2"
+            android:text="@string/placeholder_amiibo_name"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

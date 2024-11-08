@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    android:label="@string/title_home"
+    app:startDestination="@id/nav_home">
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.amadbo.fragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_appGuideVPHostFragment"
+            app:destination="@id/appGuideVPHostFragment"
+            app:enterAnim="@anim/trans_zoom_in"
+            app:exitAnim="@anim/trans_zoom_out"
+            app:popEnterAnim="@anim/trans_backin"
+            app:popExitAnim="@anim/trans_zoom_backout" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.amadbo.fragments.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/nav_myAmiibo"
+        android:name="com.example.amadbo.fragments.MyAmiiboFragment"
+        android:label="@string/title_myamiibo"
+        tools:layout="@layout/fragment_my_amiibo" >
+        <action
+            android:id="@+id/action_nav_myAmiibo_to_nav_detail"
+            app:destination="@id/nav_detail"
+            app:enterAnim="@anim/trans_zoom_in"
+            app:exitAnim="@anim/trans_zoom_out"
+            app:popEnterAnim="@anim/trans_zoom_backout"
+            app:popExitAnim="@anim/trans_zoom_backin" />
+        <action
+            android:id="@+id/action_nav_myAmiibo_to_nav_detail_no_anim"
+            app:destination="@id/nav_detail" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_search"
+        android:name="com.example.amadbo.fragments.SearchFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_nav_search_to_nav_detail"
+            app:destination="@id/nav_detail"
+            app:enterAnim="@anim/trans_zoom_in"
+            app:exitAnim="@anim/trans_zoom_out"
+            app:popEnterAnim="@anim/trans_zoom_backout"
+            app:popExitAnim="@anim/trans_zoom_backin" />
+        <action
+            android:id="@+id/action_nav_search_to_nav_detail_no_anim"
+            app:destination="@id/nav_detail" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_amiiboseries"
+        android:name="com.example.amadbo.fragments.AmiiboSeriesFragment"
+        android:label="@string/title_series"
+        tools:layout="@layout/fragment_series" >
+        <action
+            android:id="@+id/action_nav_amiiboseries_to_nav_seriesshow"
+            app:destination="@id/nav_seriesshow"
+            app:enterAnim="@anim/view_fadeout"
+            app:exitAnim="@anim/view_fadein"
+            app:popEnterAnim="@anim/trans_zoom_backout"
+            app:popExitAnim="@anim/trans_zoom_backin" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_detail"
+        android:name="com.example.amadbo.fragments.DetailFragment"
+        android:label="@string/title_detail"
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/action_nav_detail_to_nav_usage"
+            app:destination="@id/nav_usage"
+            app:enterAnim="@anim/trans_in"
+            app:exitAnim="@anim/trans_out"
+            app:popEnterAnim="@anim/trans_backin"
+            app:popExitAnim="@anim/trans_backout" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_usage"
+        android:name="com.example.amadbo.fragments.UsageFragment"
+        android:label="@string/title_usage" />
+    <fragment
+        android:id="@+id/nav_seriesshow"
+        android:name="com.example.amadbo.fragments.SeriesShowFragment"
+        android:label="@string/title_series"
+        tools:layout="@layout/fragment_series_show" >
+        <action
+            android:id="@+id/action_nav_seriesshow_to_nav_detail"
+            app:destination="@id/nav_detail"
+            app:enterAnim="@anim/trans_zoom_in"
+            app:exitAnim="@anim/trans_zoom_out"
+            app:popEnterAnim="@anim/trans_zoom_backout"
+            app:popExitAnim="@anim/trans_zoom_backin" />
+        <action
+            android:id="@+id/action_nav_seriesshow_to_nav_detail_no_anim"
+            app:destination="@id/nav_detail" />
+    </fragment>
+    <fragment
+        android:id="@+id/appGuideVPHostFragment"
+        android:name="com.example.amadbo.fragments.AppGuideVPHostFragment"
+        android:label="App Guide"
+        tools:layout="@layout/fragment_app_guide_v_p_host" />
+</navigation>

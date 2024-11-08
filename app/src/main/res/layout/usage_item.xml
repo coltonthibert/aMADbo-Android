@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MotionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layoutDescription="@xml/usage_item_scene">
+
+    <ImageView
+        android:id="@+id/bg2"
+        android:layout_width="0dp"
+        android:layout_height="144dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/shape_popout_bottom"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/Usage_Details"
+        android:layout_width="384dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/open_sans"
+        android:text="Invite an amiibo-exclusive Legend of Zelda-themed villager to visit your RV campsite, give you an item, and/or move to your town"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bg2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="413dp"
+        android:layout_height="86dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/shape_detailindent"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/Button_Expand"
+        android:layout_width="41dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bg"
+        app:srcCompat="@drawable/ic_baseline_arrow_drop_down_circle_24"
+        app:tint="#04A1E4"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/Usage_Title"
+        android:layout_width="308dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="14dp"
+        android:fontFamily="@font/open_sans"
+        android:text="The Legend Of Zelda: Breath of the Wild"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="@+id/bg"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/infoIcon"
+        android:layout_width="47dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bg"
+        app:srcCompat="@drawable/ic_baseline_info_24"
+        app:tint="#CCC070"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

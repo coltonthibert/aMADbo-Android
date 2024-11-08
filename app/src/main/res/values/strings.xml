@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">aMADbo</string>
+    <string name="title_home">Home</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hi Mom!</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_myamiibo">My Amiibo</string>
+    <string name="title_search">Search</string>
+    <string name="placeholder_amiibo_series">Amiibo Series</string>
+    <string name="placeholder_amiibo_name">Amiibo Name</string>
+    <string name="amiibo_cd">An amiibo figurine</string>
+    <string name="title_series">Series</string>
+    <string name="title_detail">Amiibo</string>
+    <string name="search_bar_placeholder">Search for amiibo…</string>
+
+    <!-- No amiibo found strings -->
+    <string name="no_amiibo_initial_prompt">Type to search for amiibo!</string>
+    <string name="title_usage">Usage</string>
+    <string name="amiibo_search_prompt">Try searching for amiibo!</string>
+    <string name="addButton_contentDescription">A button that adds the amiibo to your collection.</string>
+    <string name="searchLabel_searchBy">Search By:</string>
+    <string name="searchLabel_Name">Name</string>
+    <string name="searchLabel_gameSeries">Game Series</string>
+    <string name="searchLabel_AmiiboSeries">Amiibo Series</string>
+    <string name="searchLabel_include">Include:</string>
+    <string name="searchLabel_figures">Figures</string>
+    <string name="searchLabel_Cards">Cards</string>
+    <string name="searchLabel_Other">Other</string>
+    <string name="Settings_gearContentDescription">A gear icon</string>
+    <string name="Settings_amadboContentDescription">The aMADbo logo.</string>
+    <string name="Settings_Credits">Created by: Cole and Colton \nMusic by: boipurple</string>
+    <string name="Settings_versionNum">Version: 0.0.1</string>
+    <string name="Settings_AccessibilityLabel">Accessibility</string>
+    <string name="Settings_disAnimContentDescription">The icon for the Disable Animation setting</string>
+    <string name="Settings_reduceAnimLabel">Reduce Animations</string>
+    <string name="Settings_disableSoundContentDescription">The icon for the disable sound setting.</string>
+    <string name="Settings_disableSoundLabel">Disable Sound</string>
+    <string name="Settings_searchLabel">Search</string>
+    <string name="Settings_searchLayoutContentDescription">The setting for the search layout.</string>
+    <string name="Settings_searchGridLayoutLabel">Grid Layout</string>
+    <string name="Settings_dangerZoneLabel">Danger Zone</string>
+    <string name="Settings_clearAppDataContentDescription">The settings icon for clearing app data</string>
+    <string name="Settings_clearAppDataLabel">Clear App Data</string>
+    <string name="noAmiiboFoundContentDescription">A question mark icon</string>
+    <string name="amiiboUpdatePrompt">Downloading from AmiiboAPI, please wait...</string>
+    <string name="notificationTitle">Pop-up Notification</string>
+    <string name="Settings_disableMusicLabel">Disable Music</string>
+    <string name="Settings_disableMusicCD">The music icon</string>
+    <string name="copy_to_clipboard_button">Copy to clipboard button</string>
+    <string-array name="no_amiibo_found_strings">
+        <item>No amiibo found!</item>
+        <item>Your amiibo are in another castle!</item>
+        <item>Sorry, no amiibo here!</item>
+        <item>Amiibo not found!</item>
+        <item>This is where I\'d put my amiibo… IF I HAD ANY!</item>
+        <item>Dude, where\'s my amiibo?</item>
+        <item>No thoughts, amiibo empty.</item>
+        <item>Amiibo never arrives early or late, but precisely when it means to.</item>
+        <item>Sorry, I got hungry and ate that amiibo.</item>
+        <item>404: Amiibo not found!</item>
+        <item>Amiibo.exe has stopped responding.</item>
+        <item>AmiiboNotFoundException: Unable to locate amiibo.</item>
+        <item>No such amiibo; try { catch (AmiiboNotFoundException e) { } }</item>
+        <item>grep -r "amiibo" /dev/null: No match found.</item>
+        <item>SELECT * FROM amiibo WHERE status = \'missing\';</item>
+        <item>if (!amiibo) { console.log(\'No amiibo found!\'); }</item>
+        <item>AmiiboNotFound: true;</item>
+    </string-array>
+
+</resources>

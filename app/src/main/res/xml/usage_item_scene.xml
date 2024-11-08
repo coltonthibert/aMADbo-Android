@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="200">
+       <KeyFrameSet>
+       </KeyFrameSet>
+        <OnClick motion:targetId="@+id/Button_Expand" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:layout_height="48dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="@+id/bg"
+            android:layout_width="406dp"
+            android:id="@+id/bg2"
+            motion:layout_constraintStart_toStartOf="@+id/bg"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="7dp" />
+        <Constraint
+            android:id="@+id/infoIcon"
+            android:layout_width="47dp"
+            android:layout_height="56dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/bg"
+            android:layout_marginBottom="16dp"
+            motion:layout_constraintTop_toTopOf="@+id/bg"
+            android:layout_marginTop="14dp"
+            motion:layout_constraintStart_toStartOf="@+id/bg"
+            android:layout_marginStart="8dp" />
+        <Constraint
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="413dp"
+            android:layout_height="86dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/bg"
+            motion:layout_constraintBottom_toBottomOf="parent" />
+        <Constraint
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            motion:layout_constraintTop_toTopOf="@+id/bg"
+            android:layout_marginBottom="14dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/bg"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintEnd_toEndOf="@+id/bg"
+            android:layout_width="308dp"
+            motion:layout_constraintStart_toEndOf="@+id/infoIcon"
+            android:id="@+id/Usage_Title"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+        <Constraint
+            android:layout_height="48dp"
+            android:layout_width="41dp"
+            motion:layout_constraintStart_toEndOf="@+id/Usage_Title"
+            android:id="@+id/Button_Expand"
+            motion:layout_constraintEnd_toEndOf="@+id/bg"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="17dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/bg"
+            android:layout_marginBottom="0dp"
+            motion:layout_constraintTop_toTopOf="@+id/bg"
+            android:layout_marginTop="0dp" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:layout_width="384dp"
+            android:layout_height="56dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/bg2"
+            android:layout_marginBottom="5dp"
+            motion:layout_constraintStart_toStartOf="@+id/bg2"
+            android:id="@+id/Usage_Details"
+            motion:layout_constraintTop_toBottomOf="@+id/bg"
+            android:layout_marginStart="0dp"
+            motion:layout_constraintEnd_toEndOf="@+id/bg2"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="29dp" />
+        <Constraint
+            android:layout_height="56dp"
+            android:layout_marginTop="14dp"
+            motion:layout_constraintTop_toTopOf="@+id/bg"
+            android:layout_marginBottom="16dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/bg"
+            android:layout_width="47dp"
+            android:id="@+id/infoIcon"
+            motion:layout_constraintStart_toStartOf="@+id/bg"
+            android:layout_marginStart="8dp" />
+        <Constraint
+            motion:layout_constraintEnd_toEndOf="@+id/bg"
+            android:layout_width="0dp"
+            android:layout_height="144dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintStart_toStartOf="@+id/bg"
+            android:id="@+id/bg2"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp" />
+        <Constraint
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            motion:layout_constraintTop_toTopOf="@+id/bg"
+            android:layout_marginBottom="14dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/bg"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="308dp"
+            motion:layout_constraintStart_toEndOf="@+id/infoIcon"
+            android:id="@+id/Usage_Title"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+        <Constraint
+            android:layout_height="48dp"
+            motion:layout_constraintTop_toTopOf="@+id/bg"
+            android:layout_width="41dp"
+            motion:layout_constraintStart_toEndOf="@+id/Usage_Title"
+            android:id="@+id/Button_Expand"
+            motion:layout_constraintEnd_toEndOf="@+id/bg"
+            motion:layout_constraintBottom_toBottomOf="@+id/bg"
+            android:layout_marginBottom="0dp" />
+    </ConstraintSet>
+</MotionScene>
